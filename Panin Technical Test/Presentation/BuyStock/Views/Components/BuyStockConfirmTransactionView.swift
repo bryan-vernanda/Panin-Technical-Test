@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ConfirmTransactionView: View {
+struct BuyStockConfirmTransactionView: View {
     let viewModel: BuyStockViewModel
     let cancelAction: () -> Void
     let confirmAction: () -> Void
@@ -22,11 +22,11 @@ struct ConfirmTransactionView: View {
                     .padding(.top, 16)
                 
                 VStack(alignment: .leading, spacing: 12){
-                    ConfirmationRow(title: "Stock", value: viewModel.stock.symbol)
-                    ConfirmationRow(title: "Price", value: "\(PriceFormatter.formatIntToIDR(viewModel.stock.price))")
-                    ConfirmationRow(title: "Fee", value: "\(PriceFormatter.formatIntToIDR(viewModel.stockBuyFee))")
-                    ConfirmationRow(title: "Lot", value: "\(viewModel.stockBuyLot)")
-                    ConfirmationRow(title: "Amount", value: "\(PriceFormatter.formatIntToIDR(viewModel.stockBuyAmount))")
+                    BuyStockConfirmationRow(title: "Stock", value: viewModel.stock.symbol)
+                    BuyStockConfirmationRow(title: "Price", value: "\(PriceFormatter.formatIntToIDR(viewModel.stock.price))")
+                    BuyStockConfirmationRow(title: "Fee", value: "\(PriceFormatter.formatIntToIDR(viewModel.stockBuyFee))")
+                    BuyStockConfirmationRow(title: "Lot", value: "\(viewModel.stockBuyLot)")
+                    BuyStockConfirmationRow(title: "Amount", value: "\(PriceFormatter.formatIntToIDR(viewModel.stockBuyAmount))")
                 }
                 .padding(.horizontal)
                 .foregroundStyle(.black)
@@ -57,7 +57,7 @@ struct ConfirmTransactionView: View {
 }
 
 #Preview {
-    ConfirmTransactionView(
+    BuyStockConfirmTransactionView(
         viewModel: BuyStockViewModel(stock:
             Stock(
                 symbol: "BMRI",
