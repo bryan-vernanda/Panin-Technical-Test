@@ -56,20 +56,6 @@ struct ConfirmTransactionView: View {
     }
 }
 
-struct ConfirmationRow: View {
-    let title: String
-    let value: String
-    
-    var body: some View {
-        HStack(spacing: 24) {
-            Text(title)
-                .frame(width: 120, alignment: .topLeading)
-            Text(value)
-        }
-        .frame(maxWidth: .infinity, alignment: .topLeading)
-    }
-}
-
 #Preview {
     ConfirmTransactionView(
         viewModel: BuyStockViewModel(stock:
