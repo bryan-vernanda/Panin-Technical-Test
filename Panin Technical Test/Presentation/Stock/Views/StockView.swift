@@ -85,7 +85,7 @@ struct StockView: View {
                 }
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .frame(maxHeight: .infinity, alignment: .top)
     }
 }
 
