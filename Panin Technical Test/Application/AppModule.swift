@@ -11,5 +11,9 @@ struct AppModule {
         // MARK: - Repository
         let stockRepository: StockRepository = LocalStockRepository()
         
+        // MARK: - USE Case
+        
+        // Stocks
+        @Provider var getStocks: GetStocks = GetStocksImpl(stockRepo: stockRepository)
     }
 }
