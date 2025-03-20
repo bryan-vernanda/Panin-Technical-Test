@@ -40,6 +40,17 @@ class AppRouter: AppRouterProtocol, ObservableObject {
                 WatchlistView(router: self)
             }
             .navigationBarBackButtonHidden()
+        
+        case .buyStock(let stock):
+            ZStack {
+                BuyStockView(router: self, stock: stock)
+            }
+            .navigationBarBackButtonHidden()
+        case .transactionStatus(let buyStockViewModel):
+            ZStack {
+                TransactionStatusView(router: self, viewModel: buyStockViewModel)
+            }
+            .navigationBarBackButtonHidden()
         }
     }
 }

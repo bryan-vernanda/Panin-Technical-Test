@@ -24,7 +24,7 @@ struct MainView: View {
                 systemImage: "star.fill",
                 value: .watchlist
             ) {
-//                WatchlistView(router: router)
+                WatchlistView(router: router)
             }
         }
         .tint(.orange)
