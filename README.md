@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panin Technical Test</title>
-</head>
-<body>
-
 <h1>Panin Technical Test</h1>
 
 <h2>Description</h2>
@@ -34,15 +25,9 @@
 
 <h2>How to Use</h2>
 <ol>
-    <li>Clone the repository:</li>
-    <pre><code>git clone &lt;repository-url&gt;
-cd &lt;repository-folder&gt;</code></pre>
-
-    <li>Open the project in Xcode:</li>
-    <p>Ensure you have <strong>Xcode 15</strong> or later installed.</p>
-
-    <li>Run the application:</li>
-    <p>Select an iOS simulator (minimum iOS <strong>18.0</strong> due to new syntax usage) and press <code>Cmd + R</code> to build and run the app.</p>
+    <li>Clone the repository by running <code>git clone &lt;repository-url&gt;</code> and navigate to the project folder using <code>cd &lt;repository-folder&gt;</code>.</li>
+    <li>Open the project in Xcode (requires Xcode 15 or later).</li>
+    <li>Run the application by selecting an iOS simulator (minimum iOS 18.0 due to new syntax usage) and pressing <code>Cmd + R</code> to build and launch the app.</li>
 </ol>
 
 <h2>Demo</h2>
