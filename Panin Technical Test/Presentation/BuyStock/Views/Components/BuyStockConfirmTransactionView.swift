@@ -1,5 +1,5 @@
 //
-//  ConfirmTransactionView.swift
+//  BuyStockConfirmTransactionView.swift
 //  Technical Test
 //
 //  Created by Bryan Vernanda on 19/03/25.
@@ -22,20 +22,20 @@ struct BuyStockConfirmTransactionView: View {
                     .padding(.top, 16)
                 
                 VStack(alignment: .leading, spacing: 12){
-                    BuyStockConfirmationRow(title: "Stock", value: viewModel.stock.symbol)
-                    BuyStockConfirmationRow(title: "Price", value: "\(PriceFormatter.formatIntToIDR(viewModel.stock.price))")
-                    BuyStockConfirmationRow(title: "Fee", value: "\(PriceFormatter.formatIntToIDR(viewModel.stockBuyFee))")
-                    BuyStockConfirmationRow(title: "Lot", value: "\(viewModel.stockBuyLot)")
-                    BuyStockConfirmationRow(title: "Amount", value: "\(PriceFormatter.formatIntToIDR(viewModel.stockBuyAmount))")
+                    BuyStockConfirmRow(title: "Stock", value: viewModel.stock.symbol)
+                    BuyStockConfirmRow(title: "Price", value: "\(PriceFormatter.formatIntToIDR(viewModel.stock.price))")
+                    BuyStockConfirmRow(title: "Fee", value: "\(PriceFormatter.formatIntToIDR(viewModel.stockBuyFee))")
+                    BuyStockConfirmRow(title: "Lot", value: "\(viewModel.stockBuyLot)")
+                    BuyStockConfirmRow(title: "Amount", value: "\(PriceFormatter.formatIntToIDR(viewModel.stockBuyAmount))")
                 }
                 .padding(.horizontal)
                 .foregroundStyle(.black)
                 
                 HStack{
-                    ActionButton(size: .medium, buttonColor: .cancel, title: "Cancel") {
+                    DefaultActionButton(size: .medium, buttonColor: .cancel, title: "Cancel") {
                         cancelAction()
                     }
-                    ActionButton(size: .medium, buttonColor: .confirm, title: "Confirm") {
+                    DefaultActionButton(size: .medium, buttonColor: .confirm, title: "Confirm") {
                         confirmAction()
                     }
                 }

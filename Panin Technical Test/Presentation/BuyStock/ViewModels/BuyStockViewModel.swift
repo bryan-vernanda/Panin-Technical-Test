@@ -56,7 +56,7 @@ class BuyStockViewModel: ObservableObject {
         return String(format: "%.2f", percentage)
     }
     
-    func determineAmountState() -> BuyCardColorState{
+    func determineAmountState() -> BuyStockCardColorState{
         if stockBuyAmount <= tradingBalance {
             return .Affordable
         } else {

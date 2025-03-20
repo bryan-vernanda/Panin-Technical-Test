@@ -1,5 +1,5 @@
 //
-//  CustomSlider.swift
+//  BuyStockCustomSlider.swift
 //  Technical Test
 //
 //  Created by Bryan Vernanda on 19/03/25.

@@ -1,5 +1,5 @@
 //
-//  DefaultStockCardView.swift
+//  DefaultCardView.swift
 //  Technical Test
 //
 //  Created by Bryan Vernanda on 18/03/25.

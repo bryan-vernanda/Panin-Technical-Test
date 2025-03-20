@@ -1,5 +1,5 @@
 //
-//  BuyCardView.swift
+//  BuyStockCardView.swift
 //  Technical Test
 //
 //  Created by Bryan Vernanda on 19/03/25.
@@ -27,7 +27,7 @@ struct BuyStockCardView: View {
             }
             
             HStack {
-                CustomSlider(value: $viewModel.stockBuyLot, minimum: MIN_LOT, maximum: viewModel.maximumStockBuyLot())
+                BuyStockCustomSlider(value: $viewModel.stockBuyLot, minimum: MIN_LOT, maximum: viewModel.maximumStockBuyLot())
                     .padding(.trailing, 12)
                 
                 Spacer()
@@ -59,7 +59,7 @@ struct BuyStockCardView: View {
                 
                 Spacer()
                 
-                NumberStepper(
+                BuyStockNumberStepper(
                     value: $viewModel.stockBuyLot,
                     raise: RAISE_LOT
                 )

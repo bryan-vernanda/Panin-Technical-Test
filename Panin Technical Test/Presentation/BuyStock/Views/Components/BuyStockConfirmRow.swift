@@ -1,5 +1,5 @@
 //
-//  BuyStockConfirmationRow.swift
+//  BuyStockConfirmRow.swift
 //  Panin Technical Test
 //
 //  Created by Bryan Vernanda on 20/03/25.

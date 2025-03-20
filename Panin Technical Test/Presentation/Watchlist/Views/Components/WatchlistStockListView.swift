@@ -25,7 +25,7 @@ struct WatchlistStockListView: View {
             List {
                 ForEach(viewModel.watchlists, id: \.symbol) { watchlist in
                     VStack(spacing: 0) {
-                        StockCardView(stock: watchlist)
+                        DefaultCardView(stock: watchlist)
                             .swipeActions(edge: .leading) {
                                 buyStock(watchlist: watchlist)
                             }

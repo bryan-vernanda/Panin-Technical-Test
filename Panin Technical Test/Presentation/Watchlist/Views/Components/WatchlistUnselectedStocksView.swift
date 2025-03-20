@@ -29,7 +29,7 @@ struct WatchlistUnselectedStocksView: View {
                         List(selection: $multiSelection) {
                             ForEach(viewModel.unselectedStocks, id: \.symbol) { stock in
                                 VStack(spacing: 0) {
-                                    StockCardView(stock: stock)
+                                    DefaultCardView(stock: stock)
                                     Divider()
                                         .padding(.horizontal)
                                 }
@@ -47,7 +47,7 @@ struct WatchlistUnselectedStocksView: View {
                     VStack {
                         Spacer()
                         
-                        ActionButton(title: "Add to Watchlist (\(multiSelection.count))") {
+                        DefaultActionButton(title: "Add to Watchlist (\(multiSelection.count))") {
                             Task {
                                 let selectedStocks = viewModel.unselectedStocks.filter { multiSelection.contains($0.symbol) }
                                 

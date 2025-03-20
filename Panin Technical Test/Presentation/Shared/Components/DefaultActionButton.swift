@@ -1,5 +1,5 @@
 //
-//  ActionButton.swift
+//  DefaultActionButton.swift
 //  Technical Test
 //
 //  Created by Bryan Vernanda on 19/03/25.
@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct DefaultActionButton: View {
-    var size: ActionButtonSize = .large
-    var buttonColor: ActionButtonColor = .base
+    var size: DefaultActionButtonSize = .large
+    var buttonColor: DefaultActionButtonColor = .base
     
     let title: String
     let action: () -> Void

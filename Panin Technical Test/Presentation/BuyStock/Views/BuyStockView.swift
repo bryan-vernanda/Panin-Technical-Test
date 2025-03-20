@@ -20,13 +20,13 @@ struct BuyStockView: View {
     
     var body: some View {
         VStack {
-            NavigationBar(title: "Buy \(stock.symbol)") {
+            BuyStockNavigationBar(title: "Buy \(stock.symbol)") {
                 router.pop()
             }
             
             Divider()
             
-            StockCardView(stock: stock)
+            DefaultCardView(stock: stock)
                 .background(
                     RoundedRectangle(cornerRadius: 12)
                         .stroke(Color(UIColor.systemGray4).opacity(1), lineWidth: 2)
@@ -34,7 +34,7 @@ struct BuyStockView: View {
                 .padding(.horizontal)
                 .padding(.top, 16)
             
-            BuyCardView(viewModel: viewModel)
+            BuyStockCardView(viewModel: viewModel)
                 .background(
                     RoundedRectangle(cornerRadius: 12)
                         .stroke(Color(UIColor.systemGray4).opacity(1), lineWidth: 2)
@@ -44,7 +44,7 @@ struct BuyStockView: View {
             
             Spacer()
             
-            ActionButton(
+            DefaultActionButton(
                 buttonColor: viewModel.determineIsDisabledButtonState() ? .disabled : .base,
                 title: "Buy"
             ) {
@@ -53,7 +53,7 @@ struct BuyStockView: View {
         }
         .overlay {
             if viewModel.isPresented {
-                ConfirmTransactionView(
+                BuyStockConfirmTransactionView(
                     viewModel: viewModel,
                     cancelAction: {
                         viewModel.isPresented = false
