@@ -34,7 +34,7 @@ struct BuyStockCardView: View {
                 
                 Text("\(viewModel.calculateStockBuyAmountPercentage()) %")
                     .foregroundStyle(amountState.textColor)
-                    .frame(maxWidth: 70, alignment: .trailing)
+                    .frame(maxWidth: 80, alignment: .trailing)
             }
             
             HStack{
