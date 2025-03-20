@@ -12,7 +12,6 @@
         <strong>Clean Architecture & SOLID Principles</strong> - The project follows Clean Architecture to ensure a well-structured, modular, and maintainable codebase.
         <ul>
             <li><strong>Separation of Concerns</strong> - The architecture divides the app into multiple layers (Data, Domain, and Presentation) to enhance readability and scalability.</li>
-            <li><strong>Dependency Inversion</strong> - High-level modules do not depend on low-level modules, but both depend on abstractions.</li>
             <li><strong>Single Responsibility Principle</strong> - Each component has a well-defined responsibility, making the codebase easier to manage and extend.</li>
         </ul>
     </li>
@@ -25,7 +24,13 @@
 
 <h2>How to Use</h2>
 <ol>
-    <li>Clone the repository by running <code>git clone &lt;repository-url&gt;</code> and navigate to the project folder using <code>cd &lt;repository-folder&gt;</code>.</li>
+    <li>
+        Download the project:
+        <ul>
+            <li>Via Git: Run <code>git clone &lt;repository-url&gt;</code> and navigate to the project folder using <code>cd &lt;repository-folder&gt;</code>.</li>
+            <li>Or download as a ZIP: Click the "<strong>Code</strong>" button on GitHub and select "<strong>Download ZIP</strong>." Extract the ZIP file to your preferred location.</li>
+        </ul>
+    </li>
     <li>Open the project in Xcode (requires Xcode 15 or later).</li>
     <li>Run the application by selecting an iOS simulator (minimum iOS 18.0 due to new syntax usage) and pressing <code>Cmd + R</code> to build and launch the app.</li>
 </ol>
@@ -33,6 +38,3 @@
 <h2>Demo</h2>
 <p>A demonstration of the application in action can be viewed in the video below:</p>
 <p><a href="INSERT_VIDEO_LINK_HERE">Watch Demo</a></p>
-
-</body>
-</html>
