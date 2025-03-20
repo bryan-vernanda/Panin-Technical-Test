@@ -1,0 +1,76 @@
+{
+  "stocks": [
+    {
+      "symbol": "ADRO",
+      "volume": "185.74K",
+      "frequency": "6.18K",
+      "previous": 2240,
+      "change": -20,
+      "percentage": "-0.89%",
+      "price": 2220
+    },
+    {
+      "symbol": "ASII",
+      "volume": "131.00K",
+      "frequency": "6.38K",
+      "previous": 4640,
+      "change": -10,
+      "percentage": "-0.22%",
+      "price": 4630
+    },
+    {
+      "symbol": "BBCA",
+      "volume": "584.24K",
+      "frequency": "14.67K",
+      "previous": 9150,
+      "change": -125,
+      "percentage": "-1.37%",
+      "price": 9025
+    },
+    {
+      "symbol": "BBNI",
+      "volume": "304.96K",
+      "frequency": "12.47K",
+      "previous": 4300,
+      "change": -40,
+      "percentage": "-0.93%",
+      "price": 4260
+    },
+    {
+      "symbol": "BBRI",
+      "volume": "2.74M",
+      "frequency": "37.67K",
+      "previous": 4030,
+      "change": -50,
+      "percentage": "-1.24%",
+      "price": 3980
+    },
+    {
+      "symbol": "BMRI",
+      "volume": "1.59M",
+      "frequency": "18.14K",
+      "previous": 4940,
+      "change": 85,
+      "percentage": "+1.72%",
+      "price": 5025
+    },
+    {
+      "symbol": "CTRA",
+      "volume": "206.35K",
+      "frequency": "2.04K",
+      "previous": 875,
+      "change": -5,
+      "percentage": "-0.57%",
+      "price": 870
+    },
+    {
+      "symbol": "GGRM",
+      "volume": "2.48K",
+      "frequency": "549",
+      "previous": 10725,
+      "change": 75,
+      "percentage": "+0.70%",
+      "price": 10800
+    }
+  ]
+}
