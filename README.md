@@ -19,6 +19,7 @@
     <li>
         <strong>Routing and Dependency Injection</strong> - The project implements a structured routing system to manage navigation efficiently, alongside Dependency Injection (DI) to improve code flexibility, testability, and maintainability.
     </li>
+    <li><strong>Dark Mode and Light Mode Support</strong> - The application automatically adapts to the system’s theme, providing a seamless experience in both Dark Mode and Light Mode.</li>
     <li><strong>UI & Unit Testing</strong> - The app includes comprehensive UI and Unit tests to ensure stability and correctness across different scenarios.</li>
 </ul>
 
