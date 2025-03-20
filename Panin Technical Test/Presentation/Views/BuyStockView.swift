@@ -45,7 +45,7 @@ struct BuyStockView: View {
             Spacer()
             
             ActionButton(
-                buttonColor: (viewModel.stockBuyLot != 0) ? .base : .disabled,
+                buttonColor: viewModel.determineIsDisabledButtonState() ? .disabled : .base,
                 title: "Buy"
             ) {
                 viewModel.isPresented = true
