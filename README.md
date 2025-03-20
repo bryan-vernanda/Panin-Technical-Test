@@ -37,4 +37,4 @@
 
 <h2>Demo</h2>
 <p>A demonstration of the application in action can be viewed in the video below:</p>
-<p><a href="INSERT_VIDEO_LINK_HERE">Watch Demo</a></p>
+<p><a href="https://youtube.com/shorts/5aqIzLXB8a8?feature=share">Watch Demo</a></p>
