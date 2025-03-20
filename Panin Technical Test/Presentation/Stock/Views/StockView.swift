@@ -30,7 +30,6 @@ struct StockView: View {
                 }
             }
             
-            
             if viewModel.stocks.isEmpty {
                 Text("Loading..")
                     .font(.title3)

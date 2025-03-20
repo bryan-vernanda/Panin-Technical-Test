@@ -41,14 +41,14 @@ public class SwiftDataContextManager {
 
 // CRUD Method
 private extension SwiftDataContextManager {
-    // SAVE
+    // CREATE
     func saveWatchlistData(watchlistSchema: WatchlistSchema) {
         if let context{
             context.insert(watchlistSchema)
         }
     }
     
-    // FETCH
+    // READ
     func fetchWatchlistData() -> Int {
         if let context {
             do {

@@ -16,7 +16,7 @@ struct GetWatchlistUnselectedStocksImpl: GetWatchlistUnselectedStocks {
         let watchlistSymbols = Set(watchlistStocks.map { $0.symbol })
         return allStocks
                 .filter { !watchlistSymbols.contains($0.symbol) }
-                .map { stock in
+                .map { stock in // To attach stock description from enum because SampleData.JSON doesn't provide
                     var modifiedStock = stock
                     modifiedStock.description = StockDescription(rawValue: stock.symbol)?.value
                     return modifiedStock
