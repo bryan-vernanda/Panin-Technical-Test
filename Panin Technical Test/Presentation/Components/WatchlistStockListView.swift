@@ -48,9 +48,7 @@ struct WatchlistStockListView: View {
     
     private func buyStock(watchlist: Stock) -> some View {
         Button {
-            router.push(
-                .buyStock(stock: watchlist)
-            )
+
         } label: {
             VStack {
                 Image(systemName: "cart.fill")
