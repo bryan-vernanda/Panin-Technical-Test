@@ -31,13 +31,13 @@ class AppRouter: AppRouterProtocol, ObservableObject {
         switch screen {
         case .main:
             ZStack {
-//                MainView(router: self)
+                MainView(router: self)
             }
             .navigationBarBackButtonHidden()
             
         case .watchlist:
             ZStack {
-//                WatchlistView(router: self)
+                WatchlistView(router: self)
             }
             .navigationBarBackButtonHidden()
         }
